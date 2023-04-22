@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF">
+        <meta http-equiv="X-UA-Campatible" content="IE-edge">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Shoot OR Die</title>
+        <style>
+            body{
+                margin: 0px;
+                overflow:hidden;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                background-color: black;
+            }
+            #score{
+                color: white;
+                position:fixed;
+                padding: 5px;
+                font-size: small;
+                user-select: none;
+            }
+            #menu{
+                position: fixed;
+                top:0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                user-select: none;
+                
+            }
+            #menu div{
+                width: 400px;
+                background-color: white;
+                text-align: center;
+                padding: 25px;
+                border-radius: 2px;
+            }
+            #menu div h1,h4,button{
+                margin:0px;
+                margin: 5px auto;
+            }
+            #startgame_btn{
+                padding: 10px;
+                background-color: cornflowerblue;
+                border: none;
+                border-radius: 5px;
+                width: 80%;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            #startgame_btn:hover{
+                opacity: 0.7;
+            }
+            h1{
+                font-size: 55px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="score">Score : <span id ="lscore">0</span></div>
+        <div id="menu">
+            <div>
+            <h1 id="finalscore">0</h1>
+            <h4>Points</h4>
+            <button id="startgame_btn">Start Game</button>
+        </div>
+        </div>
+        <canvas></canvas>
+<script src="logic.js"></script>
+    </body>
+</html>
